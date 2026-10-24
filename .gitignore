@@ -1,0 +1,5 @@
+# Ignore everything except website files
+*
+!index.html
+!styles.css
+!.gitignore

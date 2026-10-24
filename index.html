@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution Edge — Tier 2 Live Accelerator Class Schedule</title>
+    <meta name="description" content="Evolution Edge Tier 2 Live Accelerator — 13 live Zoom sessions across 30 days. Track your class schedule, phases, and progress.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="main-header">
+        <div class="header-left">
+            <div class="logo" id="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="url(#goldGrad)" stroke-width="2" fill="none"/>
+                    <path d="M14 26 L20 12 L26 26 M16 22 H24" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#D4A44C"/>
+                            <stop offset="100%" stop-color="#F5D799"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="brand">
+                <span class="brand-name">EVOLUTION EDGE</span>
+                <span class="brand-sub">UNIVERSITY</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="google-link" id="google-link" title="Visit Google">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+            </a>
+            <button class="view-btn active" id="grid-view-btn" title="Grid View" onclick="setView('grid')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+                </svg>
+            </button>
+            <button class="view-btn" id="calendar-view-btn" title="Calendar View" onclick="setView('calendar')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="3" y="4" width="18" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div class="hero-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="#D4A44C"/>
+                </svg>
+                <span>TIER 2 LIVE ACCELERATOR</span>
+            </div>
+            <h1 class="hero-title">Class <span class="gold-text">Schedule</span></h1>
+            <p class="hero-desc">13 live Zoom sessions across 30 days. Every alternate day at 20:00 IST. Track your progress, never miss a session.</p>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" id="stats-section">
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A44C" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="17" rx="2"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                        <line x1="8" y1="2" x2="8" y2="6" stroke-linecap="round"/>
+                        <line x1="16" y1="2" x2="16" y2="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number">13</span>
+                    <span class="stat-label">SESSIONS</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A44C" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">DAYS</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A44C" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">PHASES</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructor Section -->
+        <section class="instructor" id="instructor-section">
+            <div class="instructor-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1.8">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                </svg>
+            </div>
+            <div class="instructor-info">
+                <span class="instructor-name">Pritam Manna</span>
+                <span class="instructor-label">INSTRUCTOR</span>
+            </div>
+        </section>
+
+        <!-- Next Session Banner -->
+        <section class="next-session" id="next-session-banner">
+            <div class="pulse-dot"></div>
+            <span class="next-label">Next Session</span>
+            <span class="next-date">30 Oct 2026</span>
+            <span class="next-sep">·</span>
+            <span class="next-countdown" id="countdown">5d 0h</span>
+        </section>
+
+        <!-- Schedule Content -->
+        <section class="schedule" id="schedule-section">
+
+            <!-- PHASE 01 -->
+            <div class="phase-block" id="phase-01">
+                <div class="phase-header">
+                    <div class="phase-icon phase-icon-1">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#D4A44C" stroke-width="1.5"/>
+                            <path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="#D4A44C" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="1.5" fill="#D4A44C"/>
+                        </svg>
+                    </div>
+                    <div class="phase-info">
+                        <div class="phase-tag"><span class="phase-label">PHASE 01</span> <span class="phase-days">Days 1–6</span></div>
+                        <h2 class="phase-title">Market Mechanics & System Calibration</h2>
+                    </div>
+                </div>
+
+                <div class="session-list">
+                    <div class="session-row" id="session-01" onclick="toggleSession(this)">
+                        <span class="session-num">01</span>
+                        <span class="session-date">30 Oct 2026</span>
+                        <span class="session-topic">Liquidity Concepts</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Deep dive into liquidity pools, order flow, and how smart money operates. Understanding where liquidity rests and how to use it for high-probability entries.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-02" onclick="toggleSession(this)">
+                        <span class="session-num">02</span>
+                        <span class="session-date">01 Nov 2026</span>
+                        <span class="session-topic">Multi-Timeframe Analysis</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Master the art of reading multiple timeframes to build confluence. Learn top-down analysis from monthly to 1-minute charts for precision entries.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-03" onclick="toggleSession(this)">
+                        <span class="session-num">03</span>
+                        <span class="session-date">03 Nov 2026</span>
+                        <span class="session-topic">Real-Life Strategy Application</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Applying strategies in real market conditions. Walkthrough of live chart setups, identifying A+ entries, and building your personal playbook.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-04" onclick="toggleSession(this)">
+                        <span class="session-num">04</span>
+                        <span class="session-date">05 Nov 2026</span>
+                        <span class="session-topic">Trade Management</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Complete trade management framework — entries, stop-loss placement, partial profits, trailing stops, and when to let winners run vs. cutting losses.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 02 -->
+            <div class="phase-block" id="phase-02">
+                <div class="phase-header">
+                    <div class="phase-icon phase-icon-2">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#D4A44C" stroke-width="1.5"/>
+                            <path d="M12 6v6l4 2" stroke="#D4A44C" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M16 16l2 2" stroke="#D4A44C" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="phase-info">
+                        <div class="phase-tag"><span class="phase-label">PHASE 02</span> <span class="phase-days">Days 7–14</span></div>
+                        <h2 class="phase-title">Execution, Risk & Prop Firm Mastery</h2>
+                    </div>
+                </div>
+
+                <div class="session-list">
+                    <div class="session-row" id="session-05" onclick="toggleSession(this)">
+                        <span class="session-num">05</span>
+                        <span class="session-date">07 Nov 2026</span>
+                        <span class="session-topic">Live Trading Session</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Watch and learn in real-time as we execute trades live. Real entries, real risk, real management — see theory in action.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-06" onclick="toggleSession(this)">
+                        <span class="session-num">06</span>
+                        <span class="session-date">09 Nov 2026</span>
+                        <span class="session-topic">Trading News & Fundamentals</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>How to trade around high-impact news events. Understanding NFP, CPI, FOMC, and using economic calendars to your advantage.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-07" onclick="toggleSession(this)">
+                        <span class="session-num">07</span>
+                        <span class="session-date">11 Nov 2026</span>
+                        <span class="session-topic">Advanced Journaling</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Build a professional trading journal. Track metrics, identify patterns in your behavior, and use data-driven insights to refine your edge.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 03 -->
+            <div class="phase-block" id="phase-03">
+                <div class="phase-header">
+                    <div class="phase-icon phase-icon-3">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#D4A44C" stroke-width="1.5"/>
+                            <path d="M12 8c-2 0-3.5 1.5-3.5 3.5S10 15 12 15s3.5-1.5 3.5-3.5S14 8 12 8z" stroke="#D4A44C" stroke-width="1.5"/>
+                            <path d="M12 3v2M12 19v2M3 12h2M19 12h2" stroke="#D4A44C" stroke-width="1.2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="phase-info">
+                        <div class="phase-tag"><span class="phase-label">PHASE 03</span> <span class="phase-days">Days 15–25</span></div>
+                        <h2 class="phase-title">Psychology, Optimization & Scaling</h2>
+                    </div>
+                </div>
+
+                <div class="session-list">
+                    <div class="session-row" id="session-08" onclick="toggleSession(this)">
+                        <span class="session-num">08</span>
+                        <span class="session-date">13 Nov 2026</span>
+                        <span class="session-topic">Psychology of Drawdowns</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Managing emotional turbulence during losing streaks. Building mental resilience, identifying tilt patterns, and recovery frameworks.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-09" onclick="toggleSession(this)">
+                        <span class="session-num">09</span>
+                        <span class="session-date">15 Nov 2026</span>
+                        <span class="session-topic">Prop Firm Mathematics</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Understanding prop firm challenge rules, profit targets, drawdown limits, and optimal lot sizing. The math behind passing challenges consistently.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-10" onclick="toggleSession(this)">
+                        <span class="session-num">10</span>
+                        <span class="session-date">17 Nov 2026</span>
+                        <span class="session-topic">Prop Firm & Brokerage</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Complete guide to choosing prop firms and brokerages. Comparing spreads, commissions, payout structures, and which firms to trust.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-11" onclick="toggleSession(this)">
+                        <span class="session-num">11</span>
+                        <span class="session-date">19 Nov 2026</span>
+                        <span class="session-topic">Live Doubt Solving</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Open Q&A session — bring all your doubts, chart analyses, and trade reviews. Get personalized feedback and clear all confusion.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="session-row" id="session-12" onclick="toggleSession(this)">
+                        <span class="session-num">12</span>
+                        <span class="session-date">21 Nov 2026</span>
+                        <span class="session-topic">Alpha Blueprint Masterclass</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>The final capstone session — putting everything together into your personal alpha blueprint. Building a complete, repeatable trading system.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~120 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST-BATCH BONUS -->
+            <div class="phase-block" id="phase-bonus">
+                <div class="phase-header">
+                    <div class="phase-icon phase-icon-bonus">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#D4A44C" stroke-width="1.5"/>
+                            <path d="M8 12l3 3 5-6" stroke="#D4A44C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="phase-info">
+                        <div class="phase-tag"><span class="phase-label bonus-label">POST-BATCH BONUS</span> <span class="phase-days">Post-Batch</span></div>
+                        <h2 class="phase-title">Continued Support After Graduation</h2>
+                    </div>
+                </div>
+
+                <div class="session-list">
+                    <div class="session-row" id="session-13" onclick="toggleSession(this)">
+                        <span class="session-num gold-num">13</span>
+                        <span class="session-date">05 Dec 2026</span>
+                        <span class="session-topic">Post-Batch Doubt Solving</span>
+                        <span class="session-toggle">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+                        </span>
+                        <div class="session-details">
+                            <p>Post-graduation support session. Bring your live trade setups, journaling questions, and real-world challenges for review and guidance.</p>
+                            <div class="session-meta">
+                                <span>🕗 20:00 IST</span>
+                                <span>📹 Zoom</span>
+                                <span>⏱ ~90 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer Info -->
+        <section class="footer-info" id="footer-info">
+            <div class="footer-note">
+                <div class="pulse-dot small"></div>
+                <span>All sessions at <strong>20:00 IST</strong> on Zoom unless noted</span>
+            </div>
+            <div class="footer-instructor">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D4A44C" stroke-width="1.8">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span class="footer-instructor-name">Pritam Manna — 13 sessions</span>
+            </div>
+        </section>
+
+        <!-- Google Link Card -->
+        <section class="google-card" id="google-card">
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="google-card-link">
+                <div class="google-card-inner">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <span>Visit Google</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                    </svg>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="site-footer">
+        <p>© 2026 Evolution Edge. Built by <span class="gold-text">Pritam Manna</span></p>
+    </footer>
+
+    <script>
+        // Toggle session details
+        function toggleSession(el) {
+            el.classList.toggle('expanded');
+        }
+
+        // View toggle (visual only)
+        function setView(view) {
+            document.getElementById('grid-view-btn').classList.toggle('active', view === 'grid');
+            document.getElementById('calendar-view-btn').classList.toggle('active', view === 'calendar');
+        }
+
+        // Countdown to next session
+        function updateCountdown() {
+            const nextSession = new Date('2026-10-30T20:00:00+05:30');
+            const now = new Date();
+            const diff = nextSession - now;
+
+            if (diff <= 0) {
+                document.getElementById('countdown').textContent = 'Live Now!';
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById('countdown').textContent = `${days}d ${hours}h ${mins}m`;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+
+        // Animate elements on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.phase-block, .session-row, .stat-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
